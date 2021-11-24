@@ -11,14 +11,14 @@
 использоваться <b>document</b>.
 
 <h2>Вот как выглядит код без искользования <b>QJS<b></h2>
-<code>
-    <pre>
+<pre>
+    <code>
         function get(selectorElement, parentElement) {
             if(!parentElement) {
                 parentElement = document;
             }
             return parentElement.querySelector(selectorElement);
         }
-    </pre>
-</code>
+    </code>
+</pre>
 <hr>
