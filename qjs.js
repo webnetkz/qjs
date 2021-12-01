@@ -10,9 +10,9 @@ const W = window;
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     get == querySelector
-    getA == querySelectorAll
-    deb == console.log
-    debW == console.warn
+    getAll == querySelectorAll
+    debug == console.log
+    debugWarn == console.warn
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 function get(selectorElement, parentElement) {
@@ -22,31 +22,31 @@ function get(selectorElement, parentElement) {
     return parentElement.querySelector(selectorElement);
 }
 
-function getA(selectorElements, parentElement) {
+function getAll(selectorElements, parentElement) {
     if(!parentElement) {
         parentElement = document;
     }
     return parentElement.querySelectorAll(selectorElements);
 }
 
-function deb(data) {
+function debug(data) {
     console.log(data);
 }
 
-function debW(data) {
+function debugWarn(data) {
     console.warn(data);
 }
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-    setA == setAttribute
-    remA == removeAttribute
+    setAttribute
+    removeAttribute
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-function setA(selectorElement, atribute, value) {
+function setAttribute(selectorElement, atribute, value) {
     document.querySelector(selectorElement).setAttribute(atribute, value);
 }
 
-function remA(selectorElement, atribute) {
+function removeAttribute(selectorElement, atribute) {
     document.querySelector(selectorElement).removeAttribute(atribute);
 }
 
